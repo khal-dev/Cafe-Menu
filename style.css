@@ -1,54 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Mochiy Pop One', sans-serif;
-}
-
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #252839;
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
 }
 
-ul {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-ul li {
-  position: relative;
-  list-style: none;
+h2 {
+  font-size: 30px;
 }
 
-ul li a {
-  font-size: 4em;
-  text-decoration: none;
-  letter-spacing: 2px;
-  line-height: 1em;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+.established {
+  font-style: italic;
 }
 
-ul li a::before {
-  content: attr(data-text);
-  position: absolute;
-  color: var(--clr);
-  width: 0;
-  overflow: hidden;
-  transition: 1s;
-  border-right: 8px solid var(--clr);
-  -webkit-text-stroke: 1px var(--clr);
+h1,
+h2,
+p {
+  text-align: center;
 }
 
-ul li a:hover::before {
-  width: 100%;
-  filter: drop-shadow(0 0 25px var(--clr))
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor,
+.dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
 }
